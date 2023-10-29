@@ -6,12 +6,18 @@ import { Service } from "typedi";
 export class RandomJokeController {
   constructor(private jokeService: RandomJokeService) {}
 
-  async getRandomJoke(): Promise<any> {
+  async getRandomJoke(): Promise<Joke> {
     try {
-      const joke:Joke = await this.jokeService.getRandomJoke();
+      const joke: Joke = await this.jokeService.getRandomJoke();
       return joke;
     } catch (error) {
-      return { error: 'An error occurred while fetching the joke' };
+      const errorJoke: Joke = {
+        type: "error",
+        setup: "An error occurred while fetching the joke",
+        punchline: "",
+        id: 0,
+      };
+      return errorJoke;
     }
   }
 }

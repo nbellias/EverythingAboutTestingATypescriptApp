@@ -6,10 +6,6 @@ export class RandomJokeService {
   constructor(private jokeRepository: RandomJokes) {}
 
   async getRandomJoke() {
-    try {
-      return await this.jokeRepository.getRandomJoke();
-    } catch (error) {
-      throw error;
-    }
+    return await this.jokeRepository.getRandomJoke();
   }
 }
