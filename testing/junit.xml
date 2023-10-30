@@ -1,3 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="0" failures="0" errors="0" time="0.002">
+<testsuites name="jest tests" tests="3" failures="0" errors="0" time="2.517">
+  <testsuite name="RandomJokes DAL Unit Tests" errors="0" failures="0" skipped="0" timestamp="2023-10-29T16:22:38" time="1.156" tests="2">
+    <testcase classname="RandomJokes DAL Unit Tests should fetch a random joke" name="RandomJokes DAL Unit Tests should fetch a random joke" time="0.005">
+    </testcase>
+    <testcase classname="RandomJokes DAL Unit Tests should handle network errors" name="RandomJokes DAL Unit Tests should handle network errors" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="RandomJokes DAL Integration Tests" errors="0" failures="0" skipped="0" timestamp="2023-10-29T16:22:38" time="2.274" tests="1">
+    <testcase classname="RandomJokes DAL Integration Tests should fetch a random joke" name="RandomJokes DAL Integration Tests should fetch a random joke" time="1.134">
+    </testcase>
+  </testsuite>
 </testsuites>

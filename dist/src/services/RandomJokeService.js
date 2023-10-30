@@ -21,7 +21,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RandomJokeService = void 0;
 const typedi_1 = require("typedi");
 const RandomJokes_1 = require("../repositories/dals/RandomJokes");
-let RandomJokeService = exports.RandomJokeService = class RandomJokeService {
+let RandomJokeService = class RandomJokeService {
     constructor(jokeRepository) {
         this.jokeRepository = jokeRepository;
     }
@@ -31,6 +31,7 @@ let RandomJokeService = exports.RandomJokeService = class RandomJokeService {
         });
     }
 };
+exports.RandomJokeService = RandomJokeService;
 exports.RandomJokeService = RandomJokeService = __decorate([
     (0, typedi_1.Service)(),
     __metadata("design:paramtypes", [RandomJokes_1.RandomJokes])

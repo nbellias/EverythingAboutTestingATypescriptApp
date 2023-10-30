@@ -21,7 +21,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RandomJokes = void 0;
 const axios_1 = __importDefault(require("axios"));
 const typedi_1 = require("typedi");
-let RandomJokes = exports.RandomJokes = class RandomJokes {
+let RandomJokes = class RandomJokes {
     constructor() {
         this.baseUrl = "https://official-joke-api.appspot.com";
     }
@@ -33,6 +33,7 @@ let RandomJokes = exports.RandomJokes = class RandomJokes {
         });
     }
 };
+exports.RandomJokes = RandomJokes;
 exports.RandomJokes = RandomJokes = __decorate([
     (0, typedi_1.Service)()
 ], RandomJokes);
